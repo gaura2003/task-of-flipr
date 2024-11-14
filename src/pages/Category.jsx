@@ -16,7 +16,7 @@ function Category({ Category }) {
           className="p-4 bg-backgroundLight rounded shadow hover:scale-105 transition transform hover:bg-secondary cursor-pointer"
           onClick={() => handleCategoryClick(category)}
         >
-          <img src={imageUrl} alt={category} className="w-24 h-24 bg-white object-cover rounded" />
+          <img src={imageUrl} alt={category} className="w-12 h-12 sm:w-24 sm:h-24 bg-white object-cover rounded" />
           <h2 className="text-2xl font-semibold text-primary mt-2">{category}</h2>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
         </div>

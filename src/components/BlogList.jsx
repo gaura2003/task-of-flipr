@@ -19,7 +19,7 @@ function BlogList() {
   <h1 className="text-2xl sm:text-3xl font-semibold mb-6">All posts</h1>
   <div className="space-y-8">
     {posts.map((post, index) => (
-      <Link key={index} to="/blogost">
+      <Link key={index} to="/blogpost">
         <div className="flex flex-col sm:flex-row items-center space-x-4 cursor-pointer my-10">
           <img className="w-full sm:w-96 h-auto object-cover mb-4 sm:mb-0" src={post.image} alt={post.alt} />
           <div className="w-full sm:w-2/3">

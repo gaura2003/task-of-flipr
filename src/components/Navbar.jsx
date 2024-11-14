@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); 
 
+  
+
   const toggleMenu = () => {
     setIsOpen(!isOpen); 
   };
@@ -28,12 +30,12 @@ const Navbar = () => {
               strokeWidth="2"
               d="M4 6h16M4 12h16M4 18h16"
             />
-          </svg>Menu
+          </svg>
         </button>
       </div>
 
       {/* Desktop Menu */}
-      <ul className="hidden lg:flex space-x-4 justify-center items-center">
+      <ul className="hidden  lg:flex space-x-4 justify-center items-center">
         <li><Link to="/" className="hover:text-secondary">Home</Link></li>
         <li><Link to="/blog" className="hover:text-secondary">Blog</Link></li>
         <li><Link to="/about-us" className="hover:text-secondary">About Us</Link></li>
@@ -43,7 +45,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <ul
-        className={`lg:hidden absolute top-16 left-0 w-full bg-gray-800 p-4 transition-all duration-300 ease-in-out transform ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}
+        className={`lg:hidden z-10 absolute top-16 left-0 w-full bg-gray-800 p-4 transition-all duration-300 ease-in-out transform ${isOpen ? 'max-h-screen block' : 'max-h-0 hidden'}`}
       >
         <li><Link to="/" className="block text-white py-2">Home</Link></li>
         <li><Link to="/blog" className="block text-white py-2">Blog</Link></li>

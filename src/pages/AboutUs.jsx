@@ -63,116 +63,152 @@ function AboutUs() {
   return (
     <div>
       <div className="bg-white">
-        <section className="text-center px-24 pt-24 flex">
-          <div className="w-2/3 px-20 relative top-20 shadow-lg h-[40vh]">
+        <section className="text-center sm:px-24 sm:pt-24 flex flex-col sm:flex-row">
+          <div className="sm:w-2/3 sm:px-20 sm:relative pt-20 px-4 top-20 sm:shadow-lg sm:h-[40vh]">
             <h2 className="text-gray-500 uppercase mb-2 ">About Us</h2>
-            <h1 className="text-4xl font-bold mb-4">
+            <h1 className="sm:text-4xl text-2xl font-bold mb-4">
               We are a team of content writers who share their learnings
             </h1>
           </div>
-          <p className="text-gray-600 w-1/2 mx-auto">
+          <p className="text-gray-600 sm:w-1/2 w-[70%] pb-12 mx-auto">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
         </section>
-        <section className="relative px-10">
+        <section className="relative sm:px-10 px-4">
           <img
             src={bgImg}
             alt="Group of people with a scenic background"
             className="w-full h-[90vh] object-cover"
           />
-          <div className="relative bottom-[111px] md:right-60 flex justify-center items-center">
-            <div className="bg-secondary  p-4 text-center">
-              <h3 className="text-4xl font-bold">12+</h3>
-              <p>Blogs Published</p>
+          <div className="relative bottom-[111px] md:right-60 flex justify-center items-center bg-secondary">
+            <div className="  p-4 text-center">
+              <h3 className="sm:text-4xl text-2xl font-bold">12+</h3>
+              <p className="text-xs sm:text-lg">Blogs Published</p>
             </div>
-            <div className="bg-secondary  p-4 text-center">
-              <h3 className="text-4xl font-bold">18K+</h3>
-              <p>Views on Finservet</p>
+            <div className=" p-4 text-center">
+              <h3 className="sm:text-4xl text-2xl font-bold">18K+</h3>
+              <p className="text-xs sm:text-lg">Views on Finservet</p>
             </div>
-            <div className="bg-secondary  p-4 text-center">
-              <h3 className="text-4xl font-bold">30K+</h3>
-              <p>Total active Users</p>
+            <div className=" p-4 text-center">
+              <h3 className="sm:text-4xl text-2xl font-bold">30K+</h3>
+              <p className="text-xs sm:text-lg">Total active Users</p>
             </div>
           </div>
-          <div className="flex justify-center relative pl-40 sm:relative right-14 sm:right-0 md:right-0 lg:right-0">
-  <img 
-    src={shape} 
-    alt="Shape" 
-  />
-  <img 
-    src={shape1} 
-    alt="Shape 1" 
-    className="md:w-72 w-28"
-  />
-</div>
+          <div className="flex justify-center  pl-40 sm:relative right-14 sm:right-0 md:right-0 lg:right-0">
+            <div className="absolute bottom-0">
+              <img src={shape} alt="Shape" />
+              <img
+                src={shape1}
+                alt="Shape 1"
+                className="md:w-72 w-28 hidden sm:block"
+              />
+            </div>
+          </div>
         </section>
-       
-    {/* <!-- Mission and Vision Sections --> */}
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 sm:px-12">
-      <div className="bg-gray-100 p-6 sm:p-8 rounded shadow-lg">
-        <h2 className="text-gray-500 uppercase mb-2">Our Mission</h2>
-        <h3 className="text-2xl font-bold mb-4">
-          Creating valuable content for creatives all around the world
-        </h3>
-        <p className="text-gray-600">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing in tellus.
-        </p>
-      </div>
-      <div className="bg-gray-100 p-6 sm:p-8 rounded shadow-lg">
-        <h2 className="text-gray-500 uppercase mb-2">Our Vision</h2>
-        <h3 className="text-2xl font-bold mb-4">
-          A platform that empowers individuals to improve
-        </h3>
-        <p className="text-gray-600">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing in tellus.
-        </p>
-      </div>
-    </section>
 
-    {/* <!-- Team Section --> */}
-    <div className="flex items-center justify-center my-10 bg-white px-6 sm:px-12">
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center">
-        <div className="w-full sm:w-1/2 pr-6 sm:pr-10">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Our team of creatives</h2>
-          <p className="text-lg sm:text-xl font-semibold text-gray-700 mb-4">
-            Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-          </p>
-          <p className="text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
-          </p>
-        </div>
-        <div className="w-full sm:w-1/2 relative mt-6 sm:mt-0">
-          <img src={handShake} alt="Team working together" className="w-full h-auto object-cover rounded-lg" />
-          <div className="absolute top-1/2 left-0 z-10 transform -translate-y-1/2 -translate-x-1/2 w-20 h-20">
-            <img src={yellowShape} alt="yellow shape decoration" className="w-full h-full" />
+        {/* <!-- Mission and Vision Sections --> */}
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 sm:px-12">
+          <div className="bg-gray-100 p-6 sm:p-8 rounded shadow-lg">
+            <h2 className="text-gray-500 uppercase mb-2">Our Mission</h2>
+            <h3 className="text-2xl font-bold mb-4">
+              Creating valuable content for creatives all around the world
+            </h3>
+            <p className="text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Non
+              blandit massa enim nec. Scelerisque viverra mauris in aliquam sem.
+              At risus viverra adipiscing in tellus.
+            </p>
+          </div>
+          <div className="bg-gray-100 p-6 sm:p-8 rounded shadow-lg">
+            <h2 className="text-gray-500 uppercase mb-2">Our Vision</h2>
+            <h3 className="text-2xl font-bold mb-4">
+              A platform that empowers individuals to improve
+            </h3>
+            <p className="text-gray-600">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Non
+              blandit massa enim nec. Scelerisque viverra mauris in aliquam sem.
+              At risus viverra adipiscing in tellus.
+            </p>
+          </div>
+        </section>
+
+        {/* <!-- Team Section --> */}
+        <div className="flex items-center justify-center my-10 bg-white px-6 sm:px-12">
+          <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center">
+            <div className="w-full sm:w-1/2 pr-6 sm:pr-10">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+                Our team of creatives
+              </h2>
+              <p className="text-lg sm:text-xl font-semibold text-gray-700 mb-4">
+                Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+              <p className="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat.
+              </p>
+            </div>
+            <div className="w-full sm:w-1/2 relative mt-6 sm:mt-0">
+              <img
+                src={handShake}
+                alt="Team working together"
+                className="w-full h-auto object-cover rounded-lg"
+              />
+              <div className="absolute top-1/2 left-0 z-10 transform -translate-y-1/2 -translate-x-1/2 w-20 h-20">
+                <img
+                  src={yellowShape}
+                  alt="yellow shape decoration"
+                  className="w-full h-full sm:block hidden"
+                />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    {/* <!-- Why We Started Section --> */}
-    <div className="flex items-center justify-center mb-10 bg-white px-6 sm:px-12">
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center">
-        <div className="w-full sm:w-1/2 relative">
-          <img src={threePersons} alt="People collaborating" className="w-full h-auto object-cover rounded-lg" />
-          <div className="absolute top-full left-28 z-10 transform -translate-y-1/2 -translate-x-1/2 w-20 h-20">
-            <img src={circle} alt="circle shape decoration" className="w-full h-full" />
+        {/* <!-- Why We Started Section --> */}
+        <div className="flex items-center justify-center mb-10 bg-white px-6 sm:px-12">
+          <div className="max-w-6xl mx-auto flex flex-col-reverse sm:flex-row items-center">
+            <div className="w-full sm:w-1/2 relative">
+              <img
+                src={threePersons}
+                alt="People collaborating"
+                className="w-full h-auto object-cover rounded-lg"
+              />
+              <div className="absolute top-full left-28 z-10 transform -translate-y-1/2 -translate-x-1/2 w-20 h-20">
+                <img
+                  src={circle}
+                  alt="circle shape decoration"
+                  className="w-full h-full sm:block hidden"
+                />
+              </div>
+            </div>
+            <div className="w-full sm:w-1/2 pl-6 sm:pl-10">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+                Why we started this Blog
+              </h2>
+              <p className="text-lg sm:text-xl font-semibold text-gray-700 mb-4">
+                Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+              <p className="text-gray-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat.
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="w-full sm:w-1/2 pl-6 sm:pl-10">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Why we started this Blog</h2>
-          <p className="text-lg sm:text-xl font-semibold text-gray-700 mb-4">
-            Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-          </p>
-          <p className="text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.
-          </p>
-        </div>
-      </div>
-    
         </div>
         <div className="px-8">
           <h2 className="text-center text-2xl font-bold">Authors List</h2>

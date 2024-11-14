@@ -14,7 +14,7 @@ function Section1() {
   <img 
     src={shape1} 
     alt="Shape 1" 
-    className="md:w-72 w-28"
+    className="md:w-72 w-28 sm:block hidden"
   />
 </div>
   {/* Content Section */}
@@ -22,7 +22,7 @@ function Section1() {
     {/* About Us Section */}
     <div className="md:w-1/2">
       <h2 className="text-gray-500 text-sm font-bold mb-2">ABOUT US</h2>
-      <h1 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">
+      <h1 className="text-lg sm:text-2xl font-bold text-gray-800 mb-4">
         We are a community of content writers who share their learnings
       </h1>
       <p className="text-gray-600 mb-4">

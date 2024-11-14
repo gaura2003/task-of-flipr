@@ -20,6 +20,7 @@ import Logo3 from "../assets/Client-First-IMAGES/Logo 3.svg";
 import Logo4 from "../assets/Client-First-IMAGES/Logo 4.svg";
 import Logo5 from "../assets/Client-First-IMAGES/Logo 5.svg";
 import groupImg from "../assets/Client-First-IMAGES/group of friends seen sea.svg";
+import { useLocation } from "react-router-dom";
 
 export const defaultCategories = [
   { category: "Business", imageUrl: business },
@@ -51,7 +52,14 @@ const Authors = [
   },
 ];
 
+const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
 const Home = () => (
+  
   <>
     <Slider />
     <Features />

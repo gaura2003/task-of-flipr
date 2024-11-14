@@ -2,8 +2,8 @@ import React from 'react'
 
 function JoinNow() {
   return (
-    <div className="flex flex-col items-center justify-center h-80 bg-white">
-    <h1 className="text-2xl font-bold text-gray-900" style={{ fontFamily: 'Nunito, sans-serif' }}>
+    <div className="flex flex-col px-12 items-center justify-center h-80 bg-white">
+    <h1 className="text-2xl text-center font-bold text-gray-900" style={{ fontFamily: 'Nunito, sans-serif' }}>
         Join our team to be a part of our story
     </h1>
     <p className="text-gray-600 text-center mt-4" style={{ fontFamily: 'Open Sans, sans-serif' }}>
