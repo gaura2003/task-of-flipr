@@ -1,62 +1,67 @@
-import React from 'react';
-import image from '../assets/Client-First-IMAGES/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook.svg';
-
-const Section2 = () => {
-  const slide = {
-    image: image,
-    category: "Startup",
-    title: "Step-by-step guide to choosing great font pairs",
-    author: "James West",
-    date: "May 23, 2022",
-    description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
-  };
-
+import React from "react";
+import right from "../assets/Client-First-icons/right-arrow.svg";
+import left from "../assets/Client-First-icons/left-arrow.svg";
+import profileImg from "../assets/Client-First-IMAGES/Image.svg";
+function Section2() {
   return (
-    // <section className="relative h-full text-white">
-    //   <img
-    //     src={slide.image}
-    //     alt={slide.title}
-    //     className="w-full h-full object-cover z-[-10]"
-    //   />
-    //   <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start p-8">
-    //     <p className="text-sm uppercase">
-    //       Posted on <span className="text-yellow-500">{slide.category}</span>
-    //     </p>
-    //     <h1 className="text-4xl font-bold mt-2">{slide.title}</h1>
-    //     <p className="mt-2">
-    //       By <span className="text-yellow-500">{slide.author}</span> | {slide.date}
-    //     </p>
-    //     <p className="mt-4 max-w-lg">{slide.description}</p>
-    //     <button className="bg-secondary text-gray-900 px-8 font-bold py-2 mt-4 rounded-sm">
-    //       Read More &gt;
-    //     </button>
-    //   </div>
-    // </section>
-    <section className="relative w-full">
-        <img className="absolute w-full h-full object-cover z-[-10]" src={slide.image} alt="banner image" />
-        <div className="bg-black bg-opacity-50 sm:bg-opacity-30 w-full text-white top-0 z-[1] h-[550px] md:h-[500px] sm:h-[400px] flex items-center sm:justify-start justify-center sm:px-0 px-6">
-          <div className="sm:w-[90%]  sm:px-6 py-10 ">
-            <p className="mb-2 text-sm md:mb-4 md:text-base">POSTED ON STARTUP</p>
-            <h1 className="mb-4 text-3xl font-bold leading-tight md:mb-6 md:text-4xl lg:text-5xl">
-              Step-by-step guide to choosing great font pairs
-            </h1>
-            <p className="text-xs md:text-sm">By Lorem ipsum | Aug 23 2022</p>
-            <p className="mt-3 md:mt-5 text-sm md:text-base w-full md:w-[80%] lg:w-[75%]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fugit dese facere odio sunt alias labore maiores minus quae ad.
+    <div className="flex w-full px-4 sm:px-6 lg:px-8">
+      <div className="bg-[#fdf6e4] p-6 sm:p-8 lg:p-12 rounded-lg shadow-lg w-full flex flex-col lg:flex-row my-10">
+        <div className="flex flex-col lg:flex-row w-full">
+          {/* Left Section */}
+          <div className="lg:p-16 p-6 lg:border-r border-gray-300 w-full lg:w-2/3 mb-6 lg:mb-0">
+            <h4 className="text-sm text-gray-600 mb-2">TESTIMONIALS</h4>
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 lg:w-56">
+              What people say about our blog
+            </h2>
+            <p className="text-gray-600 lg:w-72">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor.
             </p>
-            <div className="mt-4">
-              {/* <Button text="Read More >" onClickHandler={() => navigate("/blog-post")} /> */}
-              <button className="bg-secondary text-gray-900 px-8 font-bold py-2 mt-4 rounded-sm">
-                Read More &gt;
-              </button>
+          </div>
+
+          {/* Right Section */}
+          <div className="lg:p-16 p-6 w-full">
+            <p className="text-base sm:text-lg lg:text-xl mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div className="flex flex-col sm:flex-row lg:justify-between lg:items-center mt-4 space-y-4 sm:space-y-0">
+              {/* Profile Info */}
+              <div className="flex items-center">
+                <img
+                  src={profileImg}
+                  alt="Profile picture of Jonathan Vallem"
+                  className="rounded-full w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 mr-4"
+                />
+                <div>
+                  <h4 className="font-bold text-sm sm:text-base lg:text-lg">
+                    Jonathan Vallem
+                  </h4>
+                  <p className="text-gray-600 text-xs sm:text-sm lg:text-base">
+                    New York, USA
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-5 items-center">
+                <img
+                  src={left}
+                  alt=""
+                  className="w-10 h-10 p-2 rounded-full bg-gray-500 sm:w-10 sm:h-10 md:w-12 md:h-12 "
+                />
+                <img
+                  src={right}
+                  alt=""
+                  className="w-10 h-10 p-2 rounded-full bg-black sm:w-10 sm:h-10 md:w-14 md:h-14 "
+                />
+              </div>
             </div>
           </div>
         </div>
-      </section>
-
-    
+      </div>
+    </div>
   );
-};
+}
 
 export default Section2;

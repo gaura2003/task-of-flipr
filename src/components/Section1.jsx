@@ -6,7 +6,7 @@ function Section1() {
     <>
     <div className="flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
   {/* Shape Images */}
-<div className="flex justify-center relative pl-40 sm:relative right-14 sm:right-0 md:right-0 lg:right-0">
+<div className="flex justify-center relative pl-24 md:pl-40 sm:relative right-8 sm:right-0 md:right-14 lg:right-0">
   <img 
     src={shape} 
     alt="Shape" 
@@ -14,7 +14,7 @@ function Section1() {
   <img 
     src={shape1} 
     alt="Shape 1" 
-    className="md:w-72 w-28 sm:block hidden"
+    className="md:w-72 w-16"
   />
 </div>
   {/* Content Section */}

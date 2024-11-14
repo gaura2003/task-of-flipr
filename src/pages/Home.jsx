@@ -1,10 +1,10 @@
 import React from "react";
-import Slider from "../components/Section2";
+import Section from "../components/Section";
 import Features from "../components/Features";
 import Category from "./Category";
 import Section1 from "../components/Section1";
 import JoinNow from "../components/JoinNow";
-import Section3 from "../components/Section3";
+import Section2 from "../components/Section2";
 import startup from "../assets/Client-First-icons/startup.svg";
 import business from "../assets/Client-First-icons/business.svg";
 import economy from "../assets/Client-First-icons/economy.svg";
@@ -54,7 +54,7 @@ const Authors = [
 const Home = () => (
   
   <>
-    <Slider />
+    <Section />
     <Features />
     <Section1 />
 
@@ -88,15 +88,17 @@ const Home = () => (
         <p className="text-gray-400">We Are</p>
         <h4 className="text-2xl">Featured in</h4>
       </div>
-      <img src={Logo1} alt="Logo1" />
-      <img src={Logo2} alt="Logo2" />
-      <img src={Logo3} alt="Logo3" />
-      <img src={Logo4} alt="Logo4" />
-      <img src={Logo5} alt="Logo5" />
+      <div className="flex items-center justify-center gap-5 sm:gap-0 sm:justify-between flex-wrap sm:w-[80%] w-[100%]">
+      <img src={Logo1} alt="Logo1" className="sm:w-[15%] w-[90px]" />
+      <img src={Logo2} alt="Logo2" className="sm:w-[15%] w-[90px]" />
+      <img src={Logo3} alt="Logo3" className="sm:w-[15%] w-[90px]" />
+      <img src={Logo4} alt="Logo4" className="sm:w-[15%] w-[90px]" />
+      <img src={Logo5} alt="Logo5" className="sm:w-[15%] w-[90px]" />
+      </div>
     </div>
 
     <div className="px-4 sm:px-6 lg:px-8">
-      <Section3 />
+      <Section2 />
     </div>
 
     <div className="px-4 sm:px-6 lg:px-8">

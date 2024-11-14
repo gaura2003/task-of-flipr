@@ -83,7 +83,7 @@ function AboutUs() {
             alt="Group of people with a scenic background"
             className="w-full h-[90vh] object-cover"
           />
-          <div className="relative bottom-[111px] md:right-60 flex justify-center items-center bg-secondary">
+          <div className="relative md:bottom-[123px] bottom-28 md:left-36 md:w-1/2 flex justify-center items-center bg-secondary">
             <div className="  p-4 text-center">
               <h3 className="sm:text-4xl text-2xl font-bold">12+</h3>
               <p className="text-xs sm:text-lg">Blogs Published</p>
@@ -97,13 +97,13 @@ function AboutUs() {
               <p className="text-xs sm:text-lg">Total active Users</p>
             </div>
           </div>
-          <div className="flex justify-center  pl-40 sm:relative right-14 sm:right-0 md:right-0 lg:right-0">
-            <div className="absolute bottom-0">
-              <img src={shape} alt="Shape" />
+          <div className="flex justify-center w-full mx-auto pl-40 sm:relative right-0 ">
+            <div className="absolute md:bottom-[100px] bottom-24 flex flex-row-reverse">
+              <img src={shape} alt="Shape"className="" />
               <img
                 src={shape1}
                 alt="Shape 1"
-                className="md:w-72 w-28 hidden sm:block"
+                className="md:w-72 w-28 "
               />
             </div>
           </div>
