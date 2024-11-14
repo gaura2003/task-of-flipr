@@ -1,8 +1,7 @@
 import React from 'react';
-import img from '.../assetss/Client-First-IMAGES/two-women-in-front-of-dry-erase-board.svg';
-import img1 from '.../assetss/Client-First-IMAGES/photo-of-people-doing-handshakes.svg';
-import img2 from '.../assetss/Client-First-IMAGES/photo-of-woman-looking-at-man-3183173.svg';
-
+import img from '../assets/Client-First-IMAGES/two-women-in-front-of-dry-erase-board.svg';
+import img1 from '../assets/Client-First-IMAGES/photo-of-people-doing-handshakes.svg';
+import img2 from '../assets/Client-First-IMAGES/photo-of-woman-looking-at-man-3183173.svg';
 
 const recommendedArticles = [
   {

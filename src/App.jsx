@@ -9,6 +9,7 @@ import CategoryList from './components/CategoryList';  // Updated import for Cat
 import Author from './pages/Author';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import BlogPost from './pages/BlogPost';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blogpost" element={<BlogPost />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/category/:categoryName" element={<CategoryList />} /> 
             <Route path="/author" element={<Author />} />
