@@ -19,8 +19,7 @@ import Logo2 from "../assets/Client-First-IMAGES/Logo 2.svg";
 import Logo3 from "../assets/Client-First-IMAGES/Logo 3.svg";
 import Logo4 from "../assets/Client-First-IMAGES/Logo 4.svg";
 import Logo5 from "../assets/Client-First-IMAGES/Logo 5.svg";
-import groupImg from "../assets/Client-First-IMAGES/group of friends seen sea.svg";
-import { useLocation } from "react-router-dom";
+import BgImage from "../assets/Client-First-IMAGES/bgImageOfHomePage.svg";
 
 export const defaultCategories = [
   { category: "Business", imageUrl: business },
@@ -52,12 +51,6 @@ const Authors = [
   },
 ];
 
-const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
 const Home = () => (
   
   <>
@@ -69,6 +62,21 @@ const Home = () => (
     <div className="px-4 sm:px-6 lg:px-8">
       <Category Category={defaultCategories} />
     </div>
+
+    {/* section */}
+    <section data-aos="fade-up" className="px-6 mt-12 sm:mt-24 sm:px-16">
+        <div className="relative w-full">
+          <img className=" sm:w-[70%] mb-8 sm:mb-0" src={BgImage} alt="" />
+          <div className="sm:absolute sm:bottom-0 sm:w-[40%] right-0 bg-white sm:p-20 shadow-sm flex flex-col gap-3">
+            <h1>WHY WE STARTED</h1>
+            <h2 className="text-xl font-semibold sm:text-3xl">It started out as a simple idea and evolved into our passion</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore voluptas aperiam non amet sint vitae modi! Incidunt consequatur dicta voluptatibus?</p>
+            <div className="mt-2">
+              {/* <Button text="Discover Our Story >" onClickHandler={() => navigate("/about-us")} /> */}
+            </div>
+          </div>
+        </div>
+      </section>
 
     <div className="flex flex-col justify-center items-center mt-10">
       <h2 className="text-center text-2xl font-bold">Authors List</h2>

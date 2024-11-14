@@ -9,7 +9,7 @@ import Bloger5 from "../assets/Client-First-IMAGES/man -with-eyeglasses.svg";
 import Bloger6 from "../assets/Client-First-IMAGES/woman-in-blue-shirt.svg";
 import Bloger7 from "../assets/Client-First-IMAGES/content-unshaven-man-covering-eye-with-yellow-flower-.svg";
 import Bloger8 from "../assets/Client-First-IMAGES/cheerful-young-ethnic-male-millennial-standing-near-stone-wall-and-smiling-6147118.svg";
-import bgImg from "../assets/Client-First-IMAGES/group of friends seen sea.svg";
+import bgImg from "../assets/Client-First-IMAGES/bgImageOfHomePage.svg";
 import shape1 from "../assets/Client-First-IMAGES/shape-1.svg";
 import shape from "../assets/Client-First-IMAGES/shape.svg";
 import handShake from "../assets/Client-First-IMAGES/ground-group-growth-hands-461049.svg";
@@ -64,7 +64,7 @@ function AboutUs() {
     <div>
       <div className="bg-white">
         <section className="text-center sm:px-24 sm:pt-24 flex flex-col sm:flex-row">
-          <div className="sm:w-2/3 sm:px-20 sm:relative pt-20 px-4 top-20 sm:shadow-lg sm:h-[40vh]">
+          <div className="sm:w-2/3 sm:px-20 sm:relative pt-20 px-4 top-20 sm:shadow-lg sm:h-[40vh] z-[1] bg-white">
             <h2 className="text-gray-500 uppercase mb-2 ">About Us</h2>
             <h1 className="sm:text-4xl text-2xl font-bold mb-4">
               We are a team of content writers who share their learnings
