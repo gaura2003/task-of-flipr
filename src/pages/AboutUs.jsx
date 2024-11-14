@@ -97,7 +97,18 @@ function AboutUs() {
               <p className="text-xs sm:text-lg">Total active Users</p>
             </div>
           </div>
-          <div className="flex justify-center w-full mx-auto pl-40 sm:relative right-0 ">
+          <div className="flex flex-row-reverse md:bottom-[123px] justify-center relative pl-24 md:pl-40 sm:relative md:right-2 right-8 bottom-28 ">
+  <img 
+    src={shape} 
+    alt="Shape" 
+  />
+  <img 
+    src={shape1} 
+    alt="Shape 1" 
+    className="md:w-72 w-16"
+  />
+</div>
+          {/* <div className="flex justify-center w-full mx-auto pl-40 sm:relative right-0 ">
             <div className="absolute md:bottom-[100px] bottom-24 flex flex-row-reverse">
               <img src={shape} alt="Shape"className="" />
               <img
@@ -106,7 +117,7 @@ function AboutUs() {
                 className="md:w-72 w-28 "
               />
             </div>
-          </div>
+          </div> */}
         </section>
 
         {/* <!-- Mission and Vision Sections --> */}
